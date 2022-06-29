@@ -62,4 +62,5 @@ button.addEventListener("click", function() {
     let terminer = document.querySelector(".terminer");
     body.removeChild(terminer);
     click = 9;
+    console.log(click)
 })
