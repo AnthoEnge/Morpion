@@ -24,28 +24,30 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
 }
 
 body h1 {
   color: #ff4d4d;
   margin: 30px 0;
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 3vw);
   font-family: 'League Gothic', sans-serif;
+  letter-spacing: 1rem;
 }
 
 .morpion {
-  width: auto;
+  width: 400px;
+  max-width: 80vw;
   height: auto;
   background: #131313;
   border-radius: 5px;
   overflow: hidden;
   border: 2px solid black;
-  -webkit-box-shadow: 0 0 10px #818181;
-          box-shadow: 0 0 10px #818181;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
 }
 
 .morpion .titleDiv {
-  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +55,7 @@ body h1 {
       justify-content: space-around;
   text-align: center;
   color: white;
+  font-size: 1.5rem;
   padding: 5px 10px;
 }
 
@@ -96,11 +99,12 @@ body h1 {
 .morpion .games .content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
-  -ms-grid-rows: 33% 33% 33%;
-      grid-template-rows: 33% 33% 33%;
-  grid-gap: 1px;
+  -ms-grid-columns: 33.3% 33.3% 33.3%;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+  -ms-grid-rows: 33.3% 33.3% 33.3%;
+      grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-gap: 2px;
+  height: 100%;
   width: 100%;
 }
 
@@ -126,8 +130,8 @@ body h1 {
 }
 
 button {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 5px 10px;
+  font-size: 1.5rem;
   background: #ff4d4d;
   border-radius: 10px;
   border: none;
@@ -137,5 +141,15 @@ button {
 
 button:hover {
   background: #ff3333;
+}
+
+.terminer {
+  font-size: calc(1rem + 5vw);
+  position: absolute;
+  top: 0%;
+  color: #131313;
+  background: #ff4d4d;
+  text-align: center;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
